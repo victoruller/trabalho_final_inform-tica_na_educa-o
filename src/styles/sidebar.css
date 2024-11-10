@@ -1,0 +1,29 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    margin-left: 5vw;
+    margin-top: 10vh;
+    width: 15vw;
+}
+
+@media (min-width: 50px) and (max-width: 100px) {
+    .sidebar {
+        width: 25vw;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1749px) {
+    .sidebar {
+        width: 14vw;
+    }
+}
+
+@media (min-width: 1750px) {
+    .sidebar {
+        width: 12vw;
+    }
+}
