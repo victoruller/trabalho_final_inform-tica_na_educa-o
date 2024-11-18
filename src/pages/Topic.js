@@ -17,6 +17,13 @@ import GitReset from '../components/GitReset';
 import GitRemote from '../components/GitRemote';
 import GitFetch from '../components/GitFetch';
 
+import GitAdd from '../components/GitAdd';
+import GitDiff from '../components/GitDiff';
+import GitRebase from '../components/GitRebase';
+import GitRevert from '../components/GitRevert';
+import GitSwitch from '../components/GitSwitch';
+
+
 function Topic() {
   const { command } = useParams();
 
@@ -33,6 +40,11 @@ function Topic() {
     'git-reset': <GitReset />,
     'git-remote': <GitRemote />,
     'git-fetch': <GitFetch />,
+    'git-add': <GitAdd />,
+    'git-diff': <GitDiff />,
+    'git-rebase': <GitRebase />,
+    'git-revert': <GitRevert />,
+    'git-switch': <GitSwitch />
   };
 
   const SelectedComponent = componentsMap[command] || <p>Comando não encontrado.</p>;

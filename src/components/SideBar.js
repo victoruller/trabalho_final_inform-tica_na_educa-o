@@ -17,6 +17,12 @@ function SideBar() {
         <li><Link to="/topic/git-reset">Git Reset</Link></li>
         <li><Link to="/topic/git-remote">Git Remote</Link></li>
         <li><Link to="/topic/git-fetch">Git Fetch</Link></li>
+        --Colocar em ordem
+        <li><Link to="/topic/git-add">Git Add</Link></li>
+        <li><Link to="/topic/git-diff">Git Diff</Link></li>
+        <li><Link to="/topic/git-rebase">Git Rebase</Link></li>
+        <li><Link to="/topic/git-revert">Git Revert</Link></li>
+        <li><Link to="/topic/git-switch">Git Switch</Link></li>
       </ul>
     </div>
   );
