@@ -1,21 +1,19 @@
 function GitRebase() {
     return (
         <div>
-            <h1>Git Fetch</h1>
+            <h1>Git Rebase</h1>
             <p>
-                O comando git fetch é usado para buscar alterações de um repositório remoto 
-                para o repositório local. Ele baixa os commits, branches e tags do repositório remoto 
-                sem fazer a mesclagem dessas mudanças no seu branch atual. Isso permite que você veja 
-                o que foi atualizado no repositório remoto antes de integrá-lo ao seu trabalho local.
+                O comando git rebase é usado para integrar mudanças de um branch em outro, movendo a base de um branch para outro ponto. 
+                Ao contrário do git merge, que cria um commit de merge, o rebase "reaplica" os commits de um branch em cima de outro, criando um histórico linear.
             </p>
             <h2>Exemplo de uso</h2>
             <pre className="pre">
                 <code className="code">
-                    $ git fetch                        # Baixa as atualizações do repositório remoto sem mesclar
+                    $ git checkout feature-branch        # Muda para o branch 'feature-branch'
                     <br />
-                    $ git fetch origin main            # Baixa as atualizações do branch 'main' do repositório 'origin'
+                    $ git rebase main                    # Reaplica os commits de 'feature-branch' em cima do 'main'
                     <br />
-                    $ git fetch --all                 # Baixa todas as atualizações de todos os repositórios remotos
+                    $ git rebase --interactive HEAD~3    # Rebase interativo para modificar os últimos 3 commits
                 </code>
             </pre>
         </div>

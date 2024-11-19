@@ -1,21 +1,19 @@
 function GitDiff() {
     return (
         <div>
-            <h1>Git Fetch</h1>
+            <h1>Git Diff</h1>
             <p>
-                O comando git fetch é usado para buscar alterações de um repositório remoto 
-                para o repositório local. Ele baixa os commits, branches e tags do repositório remoto 
-                sem fazer a mesclagem dessas mudanças no seu branch atual. Isso permite que você veja 
-                o que foi atualizado no repositório remoto antes de integrá-lo ao seu trabalho local.
+                O comando git diff é usado para exibir as diferenças entre os arquivos no diretório de trabalho e o repositório Git. 
+                Ele mostra as alterações feitas que ainda não foram adicionadas ao stage ou comitadas, permitindo que você veja o que mudou antes de fazer o commit.
             </p>
             <h2>Exemplo de uso</h2>
             <pre className="pre">
                 <code className="code">
-                    $ git fetch                        # Baixa as atualizações do repositório remoto sem mesclar
+                    $ git diff                        # Mostra as mudanças não comitadas no diretório de trabalho
                     <br />
-                    $ git fetch origin main            # Baixa as atualizações do branch 'main' do repositório 'origin'
+                    $ git diff --staged               # Exibe as mudanças que foram adicionadas à área de stage
                     <br />
-                    $ git fetch --all                 # Baixa todas as atualizações de todos os repositórios remotos
+                    $ git diff arquivo.txt            # Exibe as diferenças para um arquivo específico
                 </code>
             </pre>
         </div>

@@ -1,21 +1,20 @@
 function GitRevert() {
     return (
         <div>
-            <h1>Git Fetch</h1>
+            <h1>Git Revert</h1>
             <p>
-                O comando git fetch é usado para buscar alterações de um repositório remoto 
-                para o repositório local. Ele baixa os commits, branches e tags do repositório remoto 
-                sem fazer a mesclagem dessas mudanças no seu branch atual. Isso permite que você veja 
-                o que foi atualizado no repositório remoto antes de integrá-lo ao seu trabalho local.
+                O comando git revert é usado para desfazer mudanças em um repositório Git criando um novo commit que anula o commit original. 
+                Isso permite que você faça uma reversão segura sem perder o histórico de commits. 
+                É uma maneira de corrigir erros em um commit sem precisar removê-lo completamente.
             </p>
             <h2>Exemplo de uso</h2>
             <pre className="pre">
                 <code className="code">
-                    $ git fetch                        # Baixa as atualizações do repositório remoto sem mesclar
+                    $ git revert HEAD                # Cria um novo commit que anula as últimas mudanças
                     <br />
-                    $ git fetch origin main            # Baixa as atualizações do branch 'main' do repositório 'origin'
+                    $ git revert commit-id        # Cria um novo commit que anula o commit especificado
                     <br />
-                    $ git fetch --all                 # Baixa todas as atualizações de todos os repositórios remotos
+                    $ git revert --no-commit HEAD   # Cria o novo commit, mas não faz commit automaticamente
                 </code>
             </pre>
         </div>
