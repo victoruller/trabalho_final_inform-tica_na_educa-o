@@ -5,7 +5,7 @@ function GitAdd() {
             <p>
                 O comando git add é usado para adicionar alterações no diretório de trabalho à área de stage. 
                 Antes de realizar um commit, você precisa "adicionar" os arquivos ou mudanças que deseja incluir no commit. 
-                O <code>git add</code> pode ser utilizado para adicionar arquivos específicos, múltiplos arquivos ou até todas as alterações de uma vez.
+                O git add pode ser utilizado para adicionar arquivos específicos, múltiplos arquivos ou até todas as alterações de uma vez.
             </p>
             <h2>Exemplo de uso</h2>
             <pre className="pre">

@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
-import '../styles/sidebar.css';
+import { Link } from "react-router-dom";
+import "../styles/sidebar.css";
 
 function SideBar() {
   return (
-    <div className="sidebar">
+    <div className="sidebar dark">
       <ul>
         <li><Link to="/topic/git-init">Git Init</Link></li>
         <li><Link to="/topic/git-branch">Git Branch</Link></li>
