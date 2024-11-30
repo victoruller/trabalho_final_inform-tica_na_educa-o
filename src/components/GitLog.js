@@ -10,7 +10,8 @@ function GitLog() {
             <h2>Exemplo de uso</h2>
             <pre className="pre">
                 <code className="code">
-                    $ git log                         # Mostra o histórico de commits completo
+                    <br />
+                    $ git log                        # Mostra o histórico de commits completo
                     <br />
                     $ git log --oneline              # Exibe o histórico em uma única linha por commit
                     <br />

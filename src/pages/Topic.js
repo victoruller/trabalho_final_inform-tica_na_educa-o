@@ -24,6 +24,9 @@ import GitRevert from '../components/GitRevert';
 import GitSwitch from '../components/GitSwitch';
 
 
+import React, { useEffect } from 'react';
+
+
 function Topic() {
   const { command } = useParams();
 
@@ -50,13 +53,17 @@ function Topic() {
   const SelectedComponent = componentsMap[command] || <p>Comando não encontrado.</p>;
 
   return (
-    <div className="topic_div">
-      <Header />
-      <div className="content">
-        <SideBar />
-        <section className='section_main_text'>
-          {SelectedComponent}
-        </section>
+    <div className="parallax">
+      <div className="topic_div">
+        <Header />
+          <div className="content">
+            <SideBar />
+            <section className='section_main_text'>
+              <div className='main_text_content'>
+                {SelectedComponent}
+              </div>
+            </section>
+          </div>
       </div>
     </div>
   );
